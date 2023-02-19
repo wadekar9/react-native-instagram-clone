@@ -12,8 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		336F695BB43441F6B202135D /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED81ADC111D34309AACD65D3 /* SourceSansPro-Bold.ttf */; };
+		540CF542BFFF4DB5B9FBFC45 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2C70C63C4E340609DDB8F82 /* SourceSansPro-ExtraLight.ttf */; };
+		5B4E980029A2548700C323C8 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5B4E97FF29A2548700C323C8 /* fonts */; };
 		7699B88040F8A987B510C191 /* libPods-instagramclone-instagramcloneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-instagramclone-instagramcloneTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8589326D352742519021A174 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB0FAFDBAD7C43F6A2C774C6 /* SourceSansPro-SemiBold.ttf */; };
+		9747DB6BF9574FB495F96A56 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3AE007823044FEAE6FBDE2 /* SourceSansPro-Regular.ttf */; };
+		98804483F8384CE8A2EF98AF /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E358F901FD874BBB97657F64 /* SourceSansPro-Black.ttf */; };
+		C5A33E4BB9C94FC69AC0732D /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFB03DE57F2F40038CFDE3AC /* SourceSansPro-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +44,20 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = instagramclone/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = instagramclone/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-instagramclone-instagramcloneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-instagramclone-instagramcloneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3AE007823044FEAE6FBDE2 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-Regular.ttf"; path = "../src/Assets/Fonts/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-instagramclone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone.debug.xcconfig"; path = "Target Support Files/Pods-instagramclone/Pods-instagramclone.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-instagramclone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone.release.xcconfig"; path = "Target Support Files/Pods-instagramclone/Pods-instagramclone.release.xcconfig"; sourceTree = "<group>"; };
+		5B4E97FF29A2548700C323C8 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-instagramclone-instagramcloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone-instagramcloneTests.debug.xcconfig"; path = "Target Support Files/Pods-instagramclone-instagramcloneTests/Pods-instagramclone-instagramcloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-instagramclone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-instagramclone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = instagramclone/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-instagramclone-instagramcloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone-instagramcloneTests.release.xcconfig"; path = "Target Support Files/Pods-instagramclone-instagramcloneTests/Pods-instagramclone-instagramcloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB0FAFDBAD7C43F6A2C774C6 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-SemiBold.ttf"; path = "../src/Assets/Fonts/SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		DFB03DE57F2F40038CFDE3AC /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-Light.ttf"; path = "../src/Assets/Fonts/SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		E2C70C63C4E340609DDB8F82 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-ExtraLight.ttf"; path = "../src/Assets/Fonts/SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E358F901FD874BBB97657F64 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-Black.ttf"; path = "../src/Assets/Fonts/SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED81ADC111D34309AACD65D3 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-Bold.ttf"; path = "../src/Assets/Fonts/SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7462B5DF994D4792838383DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E358F901FD874BBB97657F64 /* SourceSansPro-Black.ttf */,
+				ED81ADC111D34309AACD65D3 /* SourceSansPro-Bold.ttf */,
+				E2C70C63C4E340609DDB8F82 /* SourceSansPro-ExtraLight.ttf */,
+				DFB03DE57F2F40038CFDE3AC /* SourceSansPro-Light.ttf */,
+				3B3AE007823044FEAE6FBDE2 /* SourceSansPro-Regular.ttf */,
+				DB0FAFDBAD7C43F6A2C774C6 /* SourceSansPro-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +144,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				5B4E97FF29A2548700C323C8 /* fonts */,
 				13B07FAE1A68108700A75B9A /* instagramclone */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* instagramcloneTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				7462B5DF994D4792838383DD /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -242,8 +272,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4E980029A2548700C323C8 /* fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				98804483F8384CE8A2EF98AF /* SourceSansPro-Black.ttf in Resources */,
+				336F695BB43441F6B202135D /* SourceSansPro-Bold.ttf in Resources */,
+				540CF542BFFF4DB5B9FBFC45 /* SourceSansPro-ExtraLight.ttf in Resources */,
+				C5A33E4BB9C94FC69AC0732D /* SourceSansPro-Light.ttf in Resources */,
+				9747DB6BF9574FB495F96A56 /* SourceSansPro-Regular.ttf in Resources */,
+				8589326D352742519021A174 /* SourceSansPro-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
