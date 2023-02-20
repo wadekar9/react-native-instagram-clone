@@ -2,28 +2,28 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/Assets/Fonts/SourceSansPro-Black.ttf",
-      "sha1": "9f5e9f9165668260c574dcd07db63d6b90b98824"
+      "path": "src/Assets/Fonts/SF-Pro-Text-Bold.otf",
+      "sha1": "b27d8c428b282fbfd3d40362f4e3ef60afb95ebf"
     },
     {
-      "path": "src/Assets/Fonts/SourceSansPro-Bold.ttf",
-      "sha1": "167ac25366e252f07c090a8113910337f3d5255b"
+      "path": "src/Assets/Fonts/SF-Pro-Text-Heavy.otf",
+      "sha1": "330cd932b6dc96b071586409fe36754d5d829955"
     },
     {
-      "path": "src/Assets/Fonts/SourceSansPro-ExtraLight.ttf",
-      "sha1": "48fe9c368a331044f7cb8ddf4db4feda40808993"
+      "path": "src/Assets/Fonts/SF-Pro-Text-Light.otf",
+      "sha1": "dfc052b7e1aabd14920dbe798a23adcc3a3a521d"
     },
     {
-      "path": "src/Assets/Fonts/SourceSansPro-Light.ttf",
-      "sha1": "df208d4edf8bf13483beec5c5893a3f474755439"
+      "path": "src/Assets/Fonts/SF-Pro-Text-Medium.otf",
+      "sha1": "35b05b13f0c4a63cfc7d23b60c728c5d24cf14fd"
     },
     {
-      "path": "src/Assets/Fonts/SourceSansPro-Regular.ttf",
-      "sha1": "48d6928e08ba5e2ca1e15d754c146580b1c8febd"
+      "path": "src/Assets/Fonts/SF-Pro-Text-Regular.otf",
+      "sha1": "85b4043974a2a3be5afbcc9ea2becab072d2cd8f"
     },
     {
-      "path": "src/Assets/Fonts/SourceSansPro-SemiBold.ttf",
-      "sha1": "3eeb4bae47e308c768d8c65a89480159d4e0e7c2"
+      "path": "src/Assets/Fonts/SF-Pro-Text-Semibold.otf",
+      "sha1": "d8c839390af4265e252fe445b06428c5baeec70d"
     }
   ]
 }

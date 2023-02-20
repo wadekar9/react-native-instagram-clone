@@ -46,6 +46,9 @@ const RootNavigator = () => {
                 <Stack.Screen
                     name='StoryScreen'
                     component={StoryScreen}
+                    options={{
+                        animation : 'slide_from_left'
+                    }}
                 />
                 <Stack.Screen
                     name='ProfileScreen'

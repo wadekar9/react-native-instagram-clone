@@ -34,7 +34,7 @@ export const Icons = {
     MaterialCommunityIcons,
 }
 
-export const Icon = ({ type, name, size = 24, color = '#000' }) => {
+const Icon = ({ type, name, size = 24, color = '#000' }) => {
 
     const IconType = type;
 
@@ -47,3 +47,5 @@ export const Icon = ({ type, name, size = 24, color = '#000' }) => {
         />
     )
 }
+
+export default Icon;
