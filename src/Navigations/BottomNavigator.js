@@ -13,6 +13,8 @@ import SearchScreen from '../Screens/SearchScreen';
 import AddScreen from '../Screens/AddScreen';
 import NotificationScreen from '../Screens/NotificationScreen';
 import { CommonActions, useNavigation } from '@react-navigation/native';
+import { HomeFillIcon, HomeOutlineIcon, SearchFillIcon, SearchOutlineIcon, SquarePlusOutlineIcon, HeartFillIcon, HeartOutlineIcon } from '../Assets/Icons/index';
+import { moderateScale } from '../Config/Theme';
 
 const BottomNavigator = () => {
 
@@ -29,37 +31,24 @@ const BottomNavigator = () => {
             }}
             screenOptions={{
                 headerShown : false,
-                tabBarShowLabel : false
+                tabBarShowLabel : false,
+                tabBarStyle : {
+                    height : moderateScale(50)
+                }
             }}
         >
             <Tab.Screen
                 name='HomeScreen'
                 component={HomeScreen}
                 options={{
-                    tabBarIcon : ({focused}) => {
-                        return(
-                            <Icon
-                                type={Icons.Ionicons}
-                                name={focused ? 'home' : 'home-outline'}
-                                size={25}
-                            />
-                        )
-                    }
+                    tabBarIcon : ({focused}) => focused ? <HomeFillIcon /> : <HomeOutlineIcon />
                 }}
             />
             <Tab.Screen
                 name='SearchScreen'
                 component={SearchScreen}
                 options={{
-                    tabBarIcon : ({focused}) => {
-                        return(
-                            <Icon
-                                type={Icons.Ionicons}
-                                size={28}
-                                name={ focused ? 'ios-search' : 'search-outline'}
-                            />
-                        )
-                    }
+                    tabBarIcon : ({focused}) => focused ? <SearchFillIcon /> : <SearchOutlineIcon />
                 }}
             />
             <Tab.Screen
@@ -72,30 +61,14 @@ const BottomNavigator = () => {
                     }
                 }}
                 options={{
-                    tabBarIcon : () => {
-                        return(
-                            <Icon
-                                type={Icons.AntDesign}
-                                name={'plussquareo'}
-                                size={25}
-                            />
-                        )
-                    }
+                    tabBarIcon : () => <SquarePlusOutlineIcon />
                 }}
             />
             <Tab.Screen
                 name='NotificationScreen'
                 component={NotificationScreen}
                 options={{
-                    tabBarIcon : ({focused}) => {
-                        return(
-                            <Icon
-                                type={Icons.AntDesign}
-                                name={ focused ? 'heart' : 'hearto'}
-                                size={25}
-                            />
-                        )
-                    }
+                    tabBarIcon : ({focused}) => focused ? <HeartFillIcon /> : <HeartOutlineIcon />
                 }}
             />
             <Tab.Screen

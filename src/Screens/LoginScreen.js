@@ -84,14 +84,14 @@ const LoginScreen = () => {
             accessibilityRole='button'
             accessibilityLabel='forgot_button'
             activeOpacity={0.7}
-            style={{marginVertical : 5,alignSelf: 'flex-end'}}
+            style={{ marginVertical: 5, alignSelf: 'flex-end' }}
             onPress={() => console.log('forgot')}
           >
             <Text style={styles.forgotButtonText}>Forgot Password?</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={[styles.buttonContainer, { opacity : (details.email.length && details.password.length) ? 1 : 0.7 }]}
+            style={[styles.buttonContainer, { opacity: (details.email.length && details.password.length) ? 1 : 0.7 }]}
             disabled={(details.email.length && details.password.length) ? false : true}
             activeOpacity={0.9}
             accessibilityLabel={'loginButton'}
@@ -116,18 +116,18 @@ const LoginScreen = () => {
             <Text style={styles.facebookButtonContainerText}>Log in with facebook</Text>
           </TouchableOpacity>
 
-          <View style={{flexDirection: 'row',alignItems:'center',justifyContent:'center'}}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
             <View style={styles.devider} />
 
             <Text style={styles.orTextStyle} >OR</Text>
           </View>
 
           <View style={styles.bottomContainer}>
-            <Text style={[styles.bottomContainerText, { color : Colors.GRAY }]}>Don't have an account?</Text>
+            <Text style={[styles.bottomContainerText, { color: Colors.GRAY }]}>Don't have an account?</Text>
             <Text
               accessibilityRole={'text'}
               onPress={() => console.log('ppp')}
-              style={[styles.bottomContainerText, { color : Colors.SECONDARY_COLOR,marginLeft : 3}]}
+              style={[styles.bottomContainerText, { color: Colors.SECONDARY_COLOR, marginLeft: 3 }]}
             >
               Sign up.
             </Text>
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     borderColor: Colors.LIGHT_GRAY,
     borderRadius: 5,
     paddingHorizontal: 8,
-    marginVertical : 8
+    marginVertical: 8
   },
   inputContainerText: {
     flex: 1,
@@ -155,59 +155,59 @@ const styles = StyleSheet.create({
     fontSize: 14.5,
     color: Colors.SECONDARY_BLACK
   },
-  forgotButtonText : {
-    fontFamily : Fonts.Medium,
-    fontSize : 12,
-    color : Colors.SECONDARY_COLOR
+  forgotButtonText: {
+    fontFamily: Fonts.Medium,
+    fontSize: 12,
+    color: Colors.SECONDARY_COLOR
   },
-  buttonContainer : {
-    backgroundColor : Colors.SECONDARY_COLOR,
-    marginVertical : 10,
-    alignItems : 'center',
-    justifyContent : 'center',
-    paddingVertical : 15,
-    borderRadius : 5
+  buttonContainer: {
+    backgroundColor: Colors.SECONDARY_COLOR,
+    marginVertical: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 15,
+    borderRadius: 5
   },
-  buttonContainerText : {
-    fontFamily : Fonts.SemiBold,
-    color : Colors.WHITE,
-    fontSize : 14
+  buttonContainerText: {
+    fontFamily: Fonts.SemiBold,
+    color: Colors.WHITE,
+    fontSize: 14
   },
-  facebookButtonContainer : {
-    alignSelf : 'center',
+  facebookButtonContainer: {
+    alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    marginVertical : 12
+    marginVertical: 12
   },
-  facebookButtonContainerText : {
-    fontFamily : Fonts.SemiBold,
-    fontSize : 14,
-    color : Colors.SECONDARY_COLOR,
-    marginLeft : 8
+  facebookButtonContainerText: {
+    fontFamily: Fonts.SemiBold,
+    fontSize: 14,
+    color: Colors.SECONDARY_COLOR,
+    marginLeft: 8
   },
-  devider : {
+  devider: {
     height: StyleSheet.hairlineWidth + 0.5,
-    backgroundColor:Colors.LIGHT_GRAY,
+    backgroundColor: Colors.LIGHT_GRAY,
     width: '100%',
-    marginVertical : 22
+    marginVertical: 22
   },
-  orTextStyle : {
+  orTextStyle: {
     fontFamily: Fonts.SemiBold,
     fontSize: 12,
-    color : Colors.GRAY,
-    position :'absolute',
-    backgroundColor : Colors.WHITE,
-    paddingHorizontal : 28,
+    color: Colors.GRAY,
+    position: 'absolute',
+    backgroundColor: Colors.WHITE,
+    paddingHorizontal: 28,
   },
-  bottomContainer : {
-    marginVertical : 20,
-    alignItems:'center',
-    justifyContent:'center',
-    flexDirection : 'row'
+  bottomContainer: {
+    marginVertical: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row'
   },
-  bottomContainerText : {
-    fontFamily : Fonts.Regular,
-    fontSize : 14
+  bottomContainerText: {
+    fontFamily: Fonts.Regular,
+    fontSize: 14
   }
 })

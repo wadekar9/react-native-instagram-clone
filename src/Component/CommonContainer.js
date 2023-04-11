@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import { View, SafeAreaView } from 'react-native'
 import React from 'react'
 
 const CommonContainer = ({children}) => {
@@ -11,6 +11,4 @@ const CommonContainer = ({children}) => {
     )
 }
 
-export default CommonContainer
-
-const styles = StyleSheet.create({})
+export default CommonContainer;

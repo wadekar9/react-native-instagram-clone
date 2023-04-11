@@ -14,6 +14,7 @@ import ChatScreen from '../Screens/ChatScreen';
 import StoryScreen from '../Screens/StoryScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
 import AddScreen from '../Screens/AddScreen';
+import { Colors } from '../Config/Theme';
 
 const RootNavigator = () => {
     return (
@@ -22,8 +23,7 @@ const RootNavigator = () => {
                 screenOptions={{
                     headerShown: false,
                     animation : 'slide_from_right',
-                    statusBarColor : Platform.OS == 'android' ? '#fff' : undefined,
-                    statusBarStyle : Platform.OS == 'android' ? 'dark' : undefined
+                    orientation : 'portrait'
                 }}
                 initialRouteName='SplashScreen'
             >
