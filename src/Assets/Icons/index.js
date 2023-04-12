@@ -11,6 +11,8 @@ import SearchFillIcon from './SearchFillIcon';
 import SearchOutlineIcon from './SearchOutlineIcon';
 import SquarePlusOutlineIcon from './SquarePlusOutlineIcon';
 import IGTVIcon from './IGTVIcon';
+import MoreIcon from './MoreIcon';
+import VerifiedBadgeIcon from './VerifiedBadgeIcon';
 
 export {
     CameraOutlineIcon,
@@ -25,5 +27,7 @@ export {
     SearchFillIcon,
     SearchOutlineIcon,
     SquarePlusOutlineIcon,
-    IGTVIcon
+    IGTVIcon,
+    MoreIcon,
+    VerifiedBadgeIcon
 }

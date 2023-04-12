@@ -34,4 +34,9 @@ export const Colors = {
     LIGHT_GRAY: '#DEDEDE',
 }
 
+export const DEVICE_STYLES = {
+    SCREEN_WIDTH : width,
+    SCREEN_HEIGHT : height,
+}
+
 export const platform = Platform;

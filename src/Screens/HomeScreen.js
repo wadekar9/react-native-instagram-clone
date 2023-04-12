@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View, useWindowDimensions, Dimensions, ScrollView, FlatList } from 'react-native'
 import CommonContainer from '../Component/CommonContainer';
 import { Colors, Fonts, moderateScale } from '../Config/Theme';
-import { InstagramName } from '../Assets/Images/index';
+import { InstagramName, DemoUser } from '../Assets/Images/index';
+import PostComponent from '../Component/PostComponent';
 import { IGTVIcon, CameraOutlineIcon, MessangerOutlineIcon } from '../Assets/Icons/index';
 import React from 'react';
 import FastImage from 'react-native-fast-image';
@@ -38,9 +39,18 @@ const HomeScreen = () => {
 
 	const storyListContainer = () => {
 		return(
-			<View style={{width: moderateScale(62),height: moderateScale(81),backgroundColor:'green',justifyContent: 'space-between',alignItems: 'center'}}>
-				<View style={{width : moderateScale(62), height: moderateScale(62), aspectRatio : 1,backgroundColor:'pink'}}>
-
+			<View style={{padding: moderateScale(5),justifyContent: 'space-between',alignItems: 'center'}}>
+				<View>
+					<FastImage
+						source={DemoUser}
+						style={{
+							height : moderateScale(62),
+							width : moderateScale(62),
+							borderRadius : moderateScale(62/2),
+							aspectRatio : 1
+						}}
+						resizeMode={FastImage.resizeMode.cover}
+					/>
 				</View>
 				<Text style={styles.storyNameStyle}>Your StosStos</Text>
 			</View>
@@ -62,6 +72,20 @@ const HomeScreen = () => {
 					ItemSeparatorComponent={() => <View style={{margin: moderateScale(5)}} />}
 				/>
 			</View>
+			<View style={{flex : 1}}>
+				<FlatList
+					data={[...new Array(3)]}
+					initialNumToRender={1}
+					keyExtractor={(_, index) => index.toString()}
+					showsVerticalScrollIndicator={false}
+					refreshing={false}
+					renderItem={({item, index}) => {
+						return(
+							<PostComponent key={index} data={item} />
+						)
+					}}
+				/>
+			</View>
 		</CommonContainer>
 	)
 }
@@ -77,14 +101,18 @@ const styles = StyleSheet.create({
 		paddingHorizontal: moderateScale(10)
 	},
 	storiesContainer : {
-		height : moderateScale(98),
-		backgroundColor : 'red'
+		// height : moderateScale(98),
+		paddingVertical : moderateScale(5),
+		borderTopWidth : 1.2,
+		borderBottomWidth : 1.2,
+		borderColor : Colors.LIGHT_GRAY
 	},
 	storyNameStyle : {
 		textAlign : 'center',
 		fontFamily : Fonts.Regular,
 		fontSize : moderateScale(12),
 		color : SECONDARY_BLACK,
-		flexWrap : 'nowrap'
+		flexWrap : 'nowrap',
+		marginTop : moderateScale(3)
 	}
 })
