@@ -13,6 +13,10 @@ import SquarePlusOutlineIcon from './SquarePlusOutlineIcon';
 import IGTVIcon from './IGTVIcon';
 import MoreIcon from './MoreIcon';
 import VerifiedBadgeIcon from './VerifiedBadgeIcon';
+import ShoppingBagFillIcon from './ShoppingBagFillIcon';
+import MiniSearchIcon from './MiniSearchIcon';
+import LiveIcon from './LiveIcon';
+import IGTVFillIcon from './IGTVFillIcon';
 
 export {
     CameraOutlineIcon,
@@ -29,5 +33,9 @@ export {
     SquarePlusOutlineIcon,
     IGTVIcon,
     MoreIcon,
-    VerifiedBadgeIcon
+    VerifiedBadgeIcon,
+    ShoppingBagFillIcon,
+    MiniSearchIcon,
+    LiveIcon,
+    IGTVFillIcon,
 }
