@@ -13,7 +13,9 @@ const SearchScreen = () => {
           <View style={{flex : 1}}>
           <SearchBarComponent />
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity
+           activeOpacity={0.8}
+          >
             <LiveIcon />
           </TouchableOpacity>
         </View>
