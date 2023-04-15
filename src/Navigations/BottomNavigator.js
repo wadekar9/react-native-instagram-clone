@@ -8,12 +8,13 @@ const Tab = createBottomTabNavigator();
 
 //Screens
 import HomeScreen from '../Screens/HomeScreen';
-import AccountScreen from '../Screens/AccountScreen';
 import SearchScreen from '../Screens/SearchScreen';
 import AddScreen from '../Screens/AddScreen';
-import NotificationScreen from '../Screens/NotificationScreen';
+import AccountScreen from '../Screens/AccountScreen';
+import ReelScreen from '../Screens/ReelScreen';
+import TabNavigator from './TabNavigator';
 import { CommonActions, useNavigation } from '@react-navigation/native';
-import { HomeFillIcon, HomeOutlineIcon, SearchFillIcon, SearchOutlineIcon, SquarePlusOutlineIcon, HeartFillIcon, HeartOutlineIcon } from '../Assets/Icons/index';
+import { HomeFillIcon, HomeOutlineIcon, SearchFillIcon, SearchOutlineIcon, SquarePlusOutlineIcon, HeartFillIcon, LoggedInUser, ReelIcon } from '../Assets/Icons/index';
 import { moderateScale } from '../Config/Theme';
 
 const BottomNavigator = () => {
@@ -24,66 +25,59 @@ const BottomNavigator = () => {
     return (
         <Tab.Navigator
             safeAreaInsets={{
-                top : safeAreaInset.top,
-                bottom : safeAreaInset.bottom,
-                right : safeAreaInset.right,
-                left : safeAreaInset.left
+                top: safeAreaInset.top,
+                bottom: safeAreaInset.bottom,
+                right: safeAreaInset.right,
+                left: safeAreaInset.left
             }}
             screenOptions={{
-                headerShown : false,
-                tabBarShowLabel : false,
-                tabBarStyle : {
-                    height : moderateScale(50)
-                }
+                headerShown: false,
+                tabBarShowLabel: false,
+                tabBarStyle: {
+                    height: moderateScale(50)
+                },
+                tabBarHideOnKeyboard: true
             }}
         >
             <Tab.Screen
                 name='HomeScreen'
                 component={HomeScreen}
                 options={{
-                    tabBarIcon : ({focused}) => focused ? <HomeFillIcon /> : <HomeOutlineIcon />
+                    tabBarIcon: ({ focused }) => focused ? <HomeFillIcon /> : <HomeOutlineIcon />
                 }}
             />
             <Tab.Screen
                 name='SearchScreen'
                 component={SearchScreen}
                 options={{
-                    tabBarIcon : ({focused}) => focused ? <SearchFillIcon /> : <SearchOutlineIcon />
+                    tabBarIcon: ({ focused }) => focused ? <SearchFillIcon /> : <SearchOutlineIcon />
                 }}
             />
             <Tab.Screen
                 name='AddScreen'
                 component={AddScreen}
                 listeners={{
-                    tabPress : (e) => {
+                    tabPress: (e) => {
                         e.preventDefault();
                         navigation.dispatch(CommonActions.navigate('StoryScreen'))
                     }
                 }}
                 options={{
-                    tabBarIcon : () => <SquarePlusOutlineIcon />
+                    tabBarIcon: () => <SquarePlusOutlineIcon />
                 }}
             />
             <Tab.Screen
-                name='NotificationScreen'
-                component={NotificationScreen}
+                name='ReelScreen'
+                component={ReelScreen}
                 options={{
-                    tabBarIcon : ({focused}) => focused ? <HeartFillIcon /> : <HeartOutlineIcon />
+                    tabBarIcon: () => <ReelIcon />
                 }}
             />
             <Tab.Screen
                 name='AccountScreen'
                 component={AccountScreen}
                 options={{
-                    tabBarIcon : () => {
-                        return(
-                            <Icon
-                                type={Icons.AntDesign}
-                                name={'smile-circle'}
-                                size={25}
-                            />
-                        )
-                    }
+                    tabBarIcon: ({ focused }) => <LoggedInUser isFocused={focused} />
                 }}
             />
         </Tab.Navigator>

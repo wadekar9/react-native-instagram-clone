@@ -17,6 +17,23 @@ import ShoppingBagFillIcon from './ShoppingBagFillIcon';
 import MiniSearchIcon from './MiniSearchIcon';
 import LiveIcon from './LiveIcon';
 import IGTVFillIcon from './IGTVFillIcon';
+import BottomChevron from './BottomChevron';
+import LockIcon from './LockIcon';
+import PlusIcon from './PlusIcon';
+import TagIcon from './TagIcon';
+import GridIcon from './GridIcon';
+import NonFocusedGridIcon from './NonFocusedGridIcon';
+import FocusedTagIcon from './FocusedTagIcon';
+import VideoIcon from './VideoIcon';
+import StarMenuIcon from './StarMenuIcon';
+import ArchiveIcon from './ArchiveIcon';
+import NameTagIcon from './NameTagIcon';
+import ActivityIcon from './ActivityIcon';
+import ProfilePlusIcon from './ProfilePlusIcon';
+import FacebookIcon from './FacebookIcon';
+import SettingIcon from './SettingIcon';
+import ReelIcon from './ReelIcon';
+import LoggedInUser from './LoggedInUser';
 
 export {
     CameraOutlineIcon,
@@ -38,4 +55,21 @@ export {
     MiniSearchIcon,
     LiveIcon,
     IGTVFillIcon,
+    LockIcon,
+    BottomChevron,
+    PlusIcon,
+    GridIcon,
+    TagIcon,
+    NonFocusedGridIcon,
+    FocusedTagIcon,
+    VideoIcon,
+    StarMenuIcon,
+    ArchiveIcon,
+    NameTagIcon,
+    ActivityIcon,
+    ProfilePlusIcon,
+    FacebookIcon,
+    SettingIcon,
+    ReelIcon,
+    LoggedInUser
 }

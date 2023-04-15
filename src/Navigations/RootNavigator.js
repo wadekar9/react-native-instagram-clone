@@ -7,14 +7,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
 //Screen and Navigators
-import BottomNavigator from './BottomNavigator';
 import LoginScreen from '../Screens/LoginScreen';
 import SplashScreen from '../Screens/SplashScreen';
 import ChatScreen from '../Screens/ChatScreen';
 import StoryScreen from '../Screens/StoryScreen';
-import ProfileScreen from '../Screens/ProfileScreen';
-import AddScreen from '../Screens/AddScreen';
-import { Colors } from '../Config/Theme';
+import ProfileSettingScreen from '../Screens/ProfileSettingScreen';
+import DrawerNavigator from './DrawerNavigator';
+import NotificationScreen from '../Screens/NotificationScreen';
 
 const RootNavigator = () => {
     return (
@@ -22,8 +21,8 @@ const RootNavigator = () => {
             <Stack.Navigator
                 screenOptions={{
                     headerShown: false,
-                    animation : 'slide_from_right',
-                    orientation : 'portrait'
+                    animation: 'slide_from_right',
+                    orientation: 'portrait'
                 }}
                 initialRouteName='SplashScreen'
             >
@@ -36,8 +35,8 @@ const RootNavigator = () => {
                     component={LoginScreen}
                 />
                 <Stack.Screen
-                    name='BottomNavigator'
-                    component={BottomNavigator}
+                    name='DrawerNavigator'
+                    component={DrawerNavigator}
                 />
                 <Stack.Screen
                     name='ChatScreen'
@@ -47,17 +46,17 @@ const RootNavigator = () => {
                     name='StoryScreen'
                     component={StoryScreen}
                     options={{
-                        animation : 'slide_from_left'
+                        animation: 'slide_from_left'
                     }}
                 />
                 <Stack.Screen
-                    name='ProfileScreen'
-                    component={ProfileScreen}
+                    name='ProfileSettingScreen'
+                    component={ProfileSettingScreen}
                 />
-                {/* <Stack.Screen
-            name='AddScreen'
-            component={AddScreen}
-        /> */}
+                <Stack.Screen
+                    name='NotificationScreen'
+                    component={NotificationScreen}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     )

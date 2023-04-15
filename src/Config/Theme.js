@@ -32,6 +32,8 @@ export const Colors = {
     ALTRA_DARK_GRAY: '#76838f',
     GRAY: 'rgba(0,0,0,0.4)',
     LIGHT_GRAY: '#DEDEDE',
+    SECONDARY_GRAY : '#C7C7CC',
+    TRANSPARENT : 'rgab(0,0,0,0)'
 }
 
 export const DEVICE_STYLES = {

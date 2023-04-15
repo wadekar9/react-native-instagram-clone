@@ -39,7 +39,7 @@ const LoginScreen = () => {
   });
 
   const handleValidation = () => {
-    navigation.dispatch(StackActions.replace('BottomNavigator'))
+    navigation.dispatch(StackActions.replace('DrawerNavigator'))
   }
 
   return (
