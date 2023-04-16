@@ -1,5 +1,3 @@
-import { Platform } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -14,6 +12,8 @@ import StoryScreen from '../Screens/StoryScreen';
 import ProfileSettingScreen from '../Screens/ProfileSettingScreen';
 import DrawerNavigator from './DrawerNavigator';
 import NotificationScreen from '../Screens/NotificationScreen';
+import ChattingScreen from '../Screens/ChattingScreen';
+import AddStoryScreen from '../Screens/AddStoryScreen';
 
 const RootNavigator = () => {
     return (
@@ -43,6 +43,10 @@ const RootNavigator = () => {
                     component={ChatScreen}
                 />
                 <Stack.Screen
+                    name='ChattingScreen'
+                    component={ChattingScreen}
+                />
+                <Stack.Screen
                     name='StoryScreen'
                     component={StoryScreen}
                     options={{
@@ -56,6 +60,13 @@ const RootNavigator = () => {
                 <Stack.Screen
                     name='NotificationScreen'
                     component={NotificationScreen}
+                />
+                <Stack.Screen
+                    name='AddStoryScreen'
+                    component={AddStoryScreen}
+                    options={{
+                        animation: 'slide_from_left'
+                    }}
                 />
             </Stack.Navigator>
         </NavigationContainer>

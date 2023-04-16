@@ -9,7 +9,7 @@ const Tab = createBottomTabNavigator();
 //Screens
 import HomeScreen from '../Screens/HomeScreen';
 import SearchScreen from '../Screens/SearchScreen';
-import AddScreen from '../Screens/AddScreen';
+import AddStoryScreen from '../Screens/AddStoryScreen';
 import AccountScreen from '../Screens/AccountScreen';
 import ReelScreen from '../Screens/ReelScreen';
 import TabNavigator from './TabNavigator';
@@ -54,12 +54,12 @@ const BottomNavigator = () => {
                 }}
             />
             <Tab.Screen
-                name='AddScreen'
-                component={AddScreen}
+                name='AddStoryScreen1'
+                component={AddStoryScreen}
                 listeners={{
                     tabPress: (e) => {
                         e.preventDefault();
-                        navigation.dispatch(CommonActions.navigate('StoryScreen'))
+                        navigation.dispatch(CommonActions.navigate('AddStoryScreen'))
                     }
                 }}
                 options={{

@@ -34,6 +34,13 @@ import FacebookIcon from './FacebookIcon';
 import SettingIcon from './SettingIcon';
 import ReelIcon from './ReelIcon';
 import LoggedInUser from './LoggedInUser';
+import LeftChevron from './LeftChevron';
+import GalleryIcon from './GalleryIcon';
+import MoreMiniIcon from './MoreMiniIcon';
+import SendMiniIcon from './SendMiniIcon';
+import ProfileMiniIcon from './ProfileMiniIcon';
+import MiniHeartIcon from './MiniHeartIcon';
+
 
 export {
     CameraOutlineIcon,
@@ -71,5 +78,11 @@ export {
     FacebookIcon,
     SettingIcon,
     ReelIcon,
-    LoggedInUser
+    LoggedInUser,
+    LeftChevron,
+    GalleryIcon,
+    MoreMiniIcon,
+    SendMiniIcon,
+    ProfileMiniIcon,
+    MiniHeartIcon,
 }
