@@ -40,7 +40,9 @@ import MoreMiniIcon from './MoreMiniIcon';
 import SendMiniIcon from './SendMiniIcon';
 import ProfileMiniIcon from './ProfileMiniIcon';
 import MiniHeartIcon from './MiniHeartIcon';
-
+import GalleryOutlineIcon from './GalleryOutlineIcon';
+import CheckOutlineIcon from './CheckOutlineIcon';
+import CheckFillIcon from './CheckFillIcon';
 
 export {
     CameraOutlineIcon,
@@ -85,4 +87,7 @@ export {
     SendMiniIcon,
     ProfileMiniIcon,
     MiniHeartIcon,
+    GalleryOutlineIcon,
+    CheckFillIcon,
+    CheckOutlineIcon
 }

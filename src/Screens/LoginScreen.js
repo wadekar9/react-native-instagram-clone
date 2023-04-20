@@ -4,7 +4,7 @@ import FastImage from 'react-native-fast-image';
 import CommonContainer from '../Component/CommonContainer';
 import { InstagramName } from '../Assets/Images/index';
 import Icon, { Icons } from '../Config/Icons';
-import { Colors, Fonts } from '../Config/Theme'
+import { Colors, Fonts, moderateScale } from '../Config/Theme'
 import { StackActions, useNavigation } from '@react-navigation/native';
 
 const LoginInput = ({ value, onChangeValue, isPassword, placeholder, keyBoard, inputRef, onSubmit, autoComplete }) => {
@@ -45,7 +45,7 @@ const LoginScreen = () => {
   return (
     <CommonContainer>
       <ScrollView
-        contentContainerStyle={{ alignItems: 'center', justifyContent: 'center', flex: 1, padding: 15 }}
+        contentContainerStyle={{ alignItems: 'center', justifyContent: 'center', flex: 1, padding: moderateScale(15) }}
         showsVerticalScrollIndicator={false}
         keyboardDismissMode={true}
         keyboardShouldPersistTaps={'always'}
@@ -84,7 +84,7 @@ const LoginScreen = () => {
             accessibilityRole='button'
             accessibilityLabel='forgot_button'
             activeOpacity={0.7}
-            style={{ marginVertical: 5, alignSelf: 'flex-end' }}
+            style={{ marginVertical: moderateScale(5), alignSelf: 'flex-end' }}
             onPress={() => console.log('forgot')}
           >
             <Text style={styles.forgotButtonText}>Forgot Password?</Text>
@@ -110,7 +110,7 @@ const LoginScreen = () => {
             <Icon
               type={Icons.Ionicons}
               name={'logo-facebook'}
-              size={22}
+              size={moderateScale(17)}
               color={Colors.SECONDARY_COLOR}
             />
             <Text style={styles.facebookButtonContainerText}>Log in with facebook</Text>
@@ -127,7 +127,7 @@ const LoginScreen = () => {
             <Text
               accessibilityRole={'text'}
               onPress={() => console.log('ppp')}
-              style={[styles.bottomContainerText, { color: Colors.SECONDARY_COLOR, marginLeft: 3 }]}
+              style={[styles.bottomContainerText, { color: Colors.SECONDARY_COLOR, marginLeft: moderateScale(3) }]}
             >
               Sign up.
             </Text>
@@ -145,69 +145,70 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderWidth: 1,
     borderColor: Colors.LIGHT_GRAY,
-    borderRadius: 5,
-    paddingHorizontal: 8,
-    marginVertical: 8
+    borderRadius: moderateScale(5),
+    paddingHorizontal: moderateScale(8),
+    marginVertical: moderateScale(8)
   },
   inputContainerText: {
     flex: 1,
     fontFamily: Fonts.Regular,
-    fontSize: 14.5,
-    color: Colors.SECONDARY_BLACK
+    fontSize: moderateScale(14.5),
+    color: Colors.SECONDARY_BLACK,
+    height : moderateScale(44)
   },
   forgotButtonText: {
     fontFamily: Fonts.Medium,
-    fontSize: 12,
+    fontSize: moderateScale(12),
     color: Colors.SECONDARY_COLOR
   },
   buttonContainer: {
     backgroundColor: Colors.SECONDARY_COLOR,
-    marginVertical: 10,
+    marginVertical: moderateScale(18),
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 15,
-    borderRadius: 5
+    height : moderateScale(44),
+    borderRadius: moderateScale(4.5)
   },
   buttonContainerText: {
     fontFamily: Fonts.SemiBold,
     color: Colors.WHITE,
-    fontSize: 14
+    fontSize: moderateScale(14)
   },
   facebookButtonContainer: {
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    marginVertical: 12
+    marginVertical: moderateScale(10)
   },
   facebookButtonContainerText: {
     fontFamily: Fonts.SemiBold,
-    fontSize: 14,
+    fontSize: moderateScale(13.5),
     color: Colors.SECONDARY_COLOR,
-    marginLeft: 8
+    marginLeft: moderateScale(8)
   },
   devider: {
     height: StyleSheet.hairlineWidth + 0.5,
     backgroundColor: Colors.LIGHT_GRAY,
     width: '100%',
-    marginVertical: 22
+    marginVertical: moderateScale(22)
   },
   orTextStyle: {
     fontFamily: Fonts.SemiBold,
-    fontSize: 12,
+    fontSize: moderateScale(12),
     color: Colors.GRAY,
     position: 'absolute',
     backgroundColor: Colors.WHITE,
-    paddingHorizontal: 28,
+    paddingHorizontal: moderateScale(25)
   },
   bottomContainer: {
-    marginVertical: 20,
+    marginVertical: moderateScale(20),
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row'
   },
   bottomContainerText: {
     fontFamily: Fonts.Regular,
-    fontSize: 14
+    fontSize: moderateScale(14)
   }
 })
