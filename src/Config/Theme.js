@@ -33,7 +33,8 @@ export const Colors = {
     GRAY: 'rgba(0,0,0,0.4)',
     LIGHT_GRAY: '#DEDEDE',
     SECONDARY_GRAY : '#C7C7CC',
-    TRANSPARENT : 'rgab(0,0,0,0)'
+    TRANSPARENT : 'rgab(0,0,0,0)',
+    LIKE_COLOR : '#ff3040'
 }
 
 export const DEVICE_STYLES = {

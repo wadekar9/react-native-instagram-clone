@@ -1,8 +1,6 @@
-import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
-import { View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon, { Icons } from '../Config/Icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,7 +13,7 @@ import ReelScreen from '../Screens/ReelScreen';
 import TabNavigator from './TabNavigator';
 import { CommonActions, useNavigation } from '@react-navigation/native';
 import { HomeFillIcon, HomeOutlineIcon, SearchFillIcon, SearchOutlineIcon, SquarePlusOutlineIcon, HeartFillIcon, LoggedInUser, ReelIcon } from '../Assets/Icons/index';
-import { moderateScale } from '../Config/Theme';
+import { Colors, moderateScale } from '../Config/Theme';
 
 const BottomNavigator = () => {
 
@@ -34,7 +32,8 @@ const BottomNavigator = () => {
                 headerShown: false,
                 tabBarShowLabel: false,
                 tabBarStyle: {
-                    height: moderateScale(50)
+                    height: moderateScale(50),
+                    backgroundColor : Colors.WHITE
                 },
                 tabBarHideOnKeyboard: true
             }}
@@ -59,7 +58,7 @@ const BottomNavigator = () => {
                 listeners={{
                     tabPress: (e) => {
                         e.preventDefault();
-                        navigation.dispatch(CommonActions.navigate('AddStoryScreen'))
+                        navigation.dispatch(CommonActions.navigate('AddPostScreen'))
                     }
                 }}
                 options={{

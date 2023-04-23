@@ -1,9 +1,9 @@
-import { TouchableOpacity, StyleSheet, Text, View } from 'react-native'
+import { TouchableOpacity, StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react';
 import { Colors, Fonts, moderateScale } from '../Config/Theme';
 import { ActivityIcon, ArchiveIcon, NameTagIcon, SaveOutlineIcon, StarMenuIcon, SettingIcon, ProfilePlusIcon, FacebookIcon } from '../Assets/Icons/index';
 import CommonContainer from './CommonContainer'
-import { DrawerContentScrollView } from '@react-navigation/drawer';
+// import { DrawerContentScrollView } from '@react-navigation/drawer';
 
 const CustomDrawerComponent = (props) => {
 
@@ -41,7 +41,7 @@ const CustomDrawerComponent = (props) => {
     return (
         <View style={{ flex: 1 }}>
             <View style={{ flex: 0.92 }}>
-                <DrawerContentScrollView {...props} >
+                <ScrollView {...props} >
                     <View style={{ padding: moderateScale(16) }}>
                         <Text style={{ fontFamily: Fonts.Regular, fontSize: moderateScale(15), color: Colors.SECONDARY_BLACK }}>s.khasanov_</Text>
                     </View>
@@ -68,7 +68,7 @@ const CustomDrawerComponent = (props) => {
                             })
                         }
                     </View>
-                </DrawerContentScrollView>
+                </ScrollView>
             </View>
 
             <View style={{ flex: 0.08 }}>

@@ -1,11 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { Colors } from '../Config/Theme';
+import CommonContainer from '../Component/CommonContainer';
 
 const StoryScreen = () => {
   return (
-    <View>
-      <Text>StoryScreen</Text>
-    </View>
+    <CommonContainer>
+      <View style={{flex : 1,backgroundColor : Colors.SECONDARY_BLACK}}>
+        
+      </View>
+    </CommonContainer>
   )
 }
 

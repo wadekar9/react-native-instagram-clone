@@ -43,6 +43,9 @@ import MiniHeartIcon from './MiniHeartIcon';
 import GalleryOutlineIcon from './GalleryOutlineIcon';
 import CheckOutlineIcon from './CheckOutlineIcon';
 import CheckFillIcon from './CheckFillIcon';
+import CameraIcon from './CameraIcon';
+import PersonIcon from './PersonIcon';
+import MusicIcon from './MusicIcon';
 
 export {
     CameraOutlineIcon,
@@ -89,5 +92,8 @@ export {
     MiniHeartIcon,
     GalleryOutlineIcon,
     CheckFillIcon,
-    CheckOutlineIcon
+    CheckOutlineIcon,
+    CameraIcon,
+    PersonIcon,
+    MusicIcon
 }

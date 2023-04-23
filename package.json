@@ -5,14 +5,13 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
     "@react-native-camera-roll/camera-roll": "^5.3.1",
     "@react-navigation/bottom-tabs": "^6.5.5",
-    "@react-navigation/drawer": "^6.6.2",
     "@react-navigation/material-top-tabs": "^6.6.2",
     "@react-navigation/native": "^6.1.4",
     "@react-navigation/native-stack": "^6.9.10",
@@ -22,13 +21,14 @@
     "react-native-gesture-handler": "^2.9.0",
     "react-native-modal": "^13.0.1",
     "react-native-pager-view": "^6.2.0",
-    "react-native-reanimated": "^3.0.2",
+    "react-native-raw-bottom-sheet": "^2.2.0",
     "react-native-safe-area-context": "^4.5.0",
     "react-native-screens": "^3.20.0",
     "react-native-splash-screen": "^3.3.0",
     "react-native-svg": "^13.9.0",
     "react-native-tab-view": "^3.5.1",
     "react-native-vector-icons": "^9.2.0",
+    "react-native-video": "^5.2.1",
     "react-native-vision-camera": "^2.15.4"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, useRoute } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
@@ -10,12 +10,15 @@ import SplashScreen from '../Screens/SplashScreen';
 import ChatScreen from '../Screens/ChatScreen';
 import StoryScreen from '../Screens/StoryScreen';
 import ProfileSettingScreen from '../Screens/ProfileSettingScreen';
-import DrawerNavigator from './DrawerNavigator';
+import BottomNavigator from './BottomNavigator';
 import NotificationScreen from '../Screens/NotificationScreen';
 import ChattingScreen from '../Screens/ChattingScreen';
 import AddStoryScreen from '../Screens/AddStoryScreen';
+import AddPostScreen from '../Screens/AddPostScreen';
+import PostConfirmScreen from '../Screens/PostConfirmScreen';
 
 const RootNavigator = () => {
+
     return (
         <NavigationContainer>
             <Stack.Navigator
@@ -35,8 +38,8 @@ const RootNavigator = () => {
                     component={LoginScreen}
                 />
                 <Stack.Screen
-                    name='DrawerNavigator'
-                    component={DrawerNavigator}
+                    name='BottomNavigator'
+                    component={BottomNavigator}
                 />
                 <Stack.Screen
                     name='ChatScreen'
@@ -50,7 +53,8 @@ const RootNavigator = () => {
                     name='StoryScreen'
                     component={StoryScreen}
                     options={{
-                        animation: 'slide_from_left'
+                        animation: 'fade_from_bottom',
+                        animationDuration : 50
                     }}
                 />
                 <Stack.Screen
@@ -67,6 +71,17 @@ const RootNavigator = () => {
                     options={{
                         animation: 'slide_from_left'
                     }}
+                />
+                <Stack.Screen
+                    name='AddPostScreen'
+                    component={AddPostScreen}
+                    options={{
+                        animation: 'slide_from_left'
+                    }}
+                />
+                <Stack.Screen
+                    name='PostConfirmScreen'
+                    component={PostConfirmScreen}
                 />
             </Stack.Navigator>
         </NavigationContainer>
