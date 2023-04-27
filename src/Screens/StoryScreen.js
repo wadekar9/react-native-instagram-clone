@@ -5,9 +5,12 @@ import CommonContainer from '../Component/CommonContainer';
 
 const StoryScreen = () => {
   return (
-    <CommonContainer>
-      <View style={{flex : 1,backgroundColor : Colors.SECONDARY_BLACK}}>
-        
+    <CommonContainer
+      barStyle={'light-content'}
+      bgColor={Colors.SECONDARY_BLACK}
+    >
+      <View style={{ flex: 1, backgroundColor: Colors.SECONDARY_BLACK }}>
+
       </View>
     </CommonContainer>
   )

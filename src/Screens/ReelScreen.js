@@ -192,7 +192,10 @@ const ReelScreen = () => {
 	}
 
 	return (
-		<CommonContainer>
+		<CommonContainer
+			barStyle={'light-content'}
+			bgColor={Colors.BLACK}
+		>
 			<View style={{ flex: 1, backgroundColor: Colors.BLACK }}>
 				<View style={{ flex: 1 }}>
 					{/* <View style={styles.headerStyle}>
@@ -246,7 +249,7 @@ const ReelScreen = () => {
 											onVideoSeek={(e) => console.log(e, 'seeking')}
 											onBuffer={(e) => console.log('Buuuufer', e.isBuffering)}
 											onError={(e) => console.log('errroring', e.error)}
-											onProgress={(e) => console.log(e.currentTime,e.playableDuration,e.seekableDuration)}
+											// onProgress={(e) => console.log(e.currentTime,e.playableDuration,e.seekableDuration)}
 										/>
 
 										<VideoCover  />

@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, useWindowDimensions, Dimensions, ScrollView, FlatList, TouchableOpacity } from 'react-native'
 import CommonContainer from '../Component/CommonContainer';
+import CustomStatusBar from '../Component/CustomStatusBar';
 import { Colors, Fonts, moderateScale } from '../Config/Theme';
 import Icon, { Icons } from '../Config/Icons';
 import { InstagramName, DemoUser } from '../Assets/Images/index';

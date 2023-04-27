@@ -2,10 +2,10 @@ import { StyleSheet, Text, TouchableOpacity, View, Animated, ScrollView } from '
 import React, { PureComponent, useEffect, useState } from 'react';
 import { Fonts, Colors, moderateScale, DEVICE_STYLES } from '../Config/Theme';
 import CommonContainer from '../Component/CommonContainer';
-import { CameraRoll, useCameraRoll } from '@react-native-camera-roll/camera-roll';
+import { CameraRoll } from '@react-native-camera-roll/camera-roll';
 import { useNavigation } from '@react-navigation/native';
 import FastImage from 'react-native-fast-image';
-import { taekMediaPermission } from '../Utilies/mediaPermission';
+import { taekMediaPermission } from '../Helper/mediaPermission';
 import { DemoPost, DemoUser } from '../Assets/Images/index';
 import { GalleryOutlineIcon, CheckFillIcon, CheckOutlineIcon } from '../Assets/Icons/index';
 

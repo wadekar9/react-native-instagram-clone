@@ -5,7 +5,7 @@ import CustomStatusBar from './src/Component/CustomStatusBar'
 const App = () => {
   return (
     <>
-      <CustomStatusBar />
+      {/* <CustomStatusBar /> */}
       <RootNavigator/>
     </>
   )

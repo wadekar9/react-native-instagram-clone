@@ -12,15 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		35EBA2A7650B47908083A304 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C093EC15982F436DB72EBD08 /* SF-Pro-Text-Medium.otf */; };
 		5B4E980029A2548700C323C8 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5B4E97FF29A2548700C323C8 /* fonts */; };
+		5BE371A5E6CC4E0588F3426B /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39EFBC94A76B4EF38B168DA4 /* SF-Pro-Text-Bold.otf */; };
+		5C85298BF51B4EA48C3F2EA8 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52989604A7884CA6B7D2C97F /* SF-Pro-Text-Regular.otf */; };
 		7699B88040F8A987B510C191 /* libPods-instagramclone-instagramcloneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-instagramclone-instagramcloneTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		5BE371A5E6CC4E0588F3426B /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39EFBC94A76B4EF38B168DA4 /* SF-Pro-Text-Bold.otf */; };
 		862D1AD668594BBCA3613A98 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC17943222F4049B0EF57B5 /* SF-Pro-Text-Heavy.otf */; };
-		E9121E67FC6245AFA42F3F6C /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 083C355D68F8429987BD43EC /* SF-Pro-Text-Light.otf */; };
-		35EBA2A7650B47908083A304 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C093EC15982F436DB72EBD08 /* SF-Pro-Text-Medium.otf */; };
-		5C85298BF51B4EA48C3F2EA8 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52989604A7884CA6B7D2C97F /* SF-Pro-Text-Regular.otf */; };
 		E7FF7E8DEE8E43CEB63340C5 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8EDB49353BD4B04B0AD80A8 /* SF-Pro-Text-Semibold.otf */; };
+		E9121E67FC6245AFA42F3F6C /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 083C355D68F8429987BD43EC /* SF-Pro-Text-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 		00E356EE1AD99517003FC87E /* instagramcloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagramcloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* instagramcloneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instagramcloneTests.m; sourceTree = "<group>"; };
+		083C355D68F8429987BD43EC /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Light.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* instagramclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = instagramclone/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = instagramclone/AppDelegate.mm; sourceTree = "<group>"; };
@@ -44,20 +45,19 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = instagramclone/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = instagramclone/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-instagramclone-instagramcloneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-instagramclone-instagramcloneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EFBC94A76B4EF38B168DA4 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Bold.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-instagramclone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone.debug.xcconfig"; path = "Target Support Files/Pods-instagramclone/Pods-instagramclone.debug.xcconfig"; sourceTree = "<group>"; };
+		52989604A7884CA6B7D2C97F /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Regular.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-instagramclone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone.release.xcconfig"; path = "Target Support Files/Pods-instagramclone/Pods-instagramclone.release.xcconfig"; sourceTree = "<group>"; };
 		5B4E97FF29A2548700C323C8 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-instagramclone-instagramcloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone-instagramcloneTests.debug.xcconfig"; path = "Target Support Files/Pods-instagramclone-instagramcloneTests/Pods-instagramclone-instagramcloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-instagramclone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-instagramclone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC17943222F4049B0EF57B5 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Heavy.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = instagramclone/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-instagramclone-instagramcloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone-instagramcloneTests.release.xcconfig"; path = "Target Support Files/Pods-instagramclone-instagramcloneTests/Pods-instagramclone-instagramcloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		C093EC15982F436DB72EBD08 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Medium.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		C8EDB49353BD4B04B0AD80A8 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Semibold.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		39EFBC94A76B4EF38B168DA4 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Bold.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6AC17943222F4049B0EF57B5 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Heavy.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		083C355D68F8429987BD43EC /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Light.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C093EC15982F436DB72EBD08 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Medium.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		52989604A7884CA6B7D2C97F /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Regular.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C8EDB49353BD4B04B0AD80A8 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Semibold.otf"; path = "../src/Assets/Fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
